@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator2</title>
+</head>
+<body>
+
+<form name="frm">
+	
+<input name="rezultat"/><br></br>
+
+<input type="button"name="1" value="1" onclick="run1()" style="width:60px"/>
+<input type="button"name="2" value="2" onclick="run2()" style="width:60px"/>
+<input type="button"name="3" value="3" onclick="run3()" style="width:60px"/>
+<input type="button"name="+" value="+" onclick="runplus()" style="width:60px"/>
+<br />
+<input type="button"name="4" value="4" onclick="run4()" style="width:60px"/>
+<input type="button"name="5" value="5" onclick="run5()" style="width:60px"/>
+<input type="button"name="6" value="6" onclick="run6()" style="width:60px"/>
+<input type="button"name="-" value="-" onclick="runminus()" style="width:60px"/>
+<br />
+<input type="button"name="7" value="7" onclick="run7()" style="width:60px"/>
+<input type="button"name="8" value="8" onclick="run8()" style="width:60px"/>
+<input type="button"name="9" value="9" onclick="run9()" style="width:60px"/>
+<input type="button"name="/" value="/" onclick="rundjeljenje()" style="width:60px"/>
+<br />
+<input type="button"name="0" value="0" onclick="run0()" style="width:60px"/>
+<input type="button"name="." value="." onclick="runtocka()" style="width:60px"/>
+<input type="button"name="%" value="%" onclick="runprocjenat()" style="width:60px"/>
+<input type="button"name="*" value="*" onclick="runputa()" style="width:60px"/>
+<br />
+<input type="button"name="C " value="C" onclick="runclear()" style="width:93px"/>
+<input type="button" value="=" onclick="evalu()" style="width:93px"/>
+<br />
+
+
+
+
+
+</form>
+
+<script>
+var answer =document.frm.rezultat.value
+
+function run1()
+{document.frm.rezultat.value += "1";}	
+function run2()
+{document.frm.rezultat.value += "2";}	
+function run3()
+{document.frm.rezultat.value += "3";}	
+function runplus()
+{document.frm.rezultat.value += "+";}	
+
+
+
+function run4()
+{document.frm.rezultat.value += "4";}	
+function run5()
+{document.frm.rezultat.value += "5";}	
+function run6()
+{document.frm.rezultat.value += "6";}	
+function runminus()
+{document.frm.rezultat.value += "-";}	
+
+
+function run7()
+{document.frm.rezultat.value += "7";}	
+function run8()
+{document.frm.rezultat.value += "8";}	
+function run9(){document.frm.rezultat.value += "9";}	
+function rundjeljenje(){document.frm.rezultat.value += "/";}	
+
+function runclear()
+{document.frm.rezultat.value = null;}	
+function run0()
+{document.frm.rezultat.value += "0";}
+function runtocka()
+{document.frm.rezultat.value += ".";}	
+function runputa()
+{document.frm.rezultat.value += "*";}
+function runprocjenat()
+{document.frm.rezultat.value += "%";}	
+
+
+
+function evalu()
+{
+
+	var evalo = eval(document.frm.rezultat.value);
+
+	document.frm.rezultat.value = evalo;
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
