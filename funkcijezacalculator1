@@ -1,0 +1,33 @@
+<?php
+//ovo je datoteka sa funkcijama za calculator1
+
+
+$broj1 = $_POST["broj1"];
+$broj2 = $_POST["broj2"];
+$operacija = $_POST["operacije"];
+
+if ($operacija == "plus") {
+	$answer_plus= $broj1 + $broj2;
+	echo $broj1 ."+".$broj2."=";
+	echo $answer_plus;
+}
+
+if ($operacija == "minus") {
+	$answer_minus= $broj1 - $broj2;
+	echo $broj1 ."-".$broj2."=";
+	echo $answer_minus;
+}
+
+if ($operacija == "puta") {
+	$answer_puta= $broj1 * $broj2;
+	echo $broj1 ."*".$broj2."=";
+	echo $answer_puta;
+}
+
+if ($operacija == "djeljenje") {
+	$answer_djeljenje= $broj1 / $broj2;
+	echo $broj1 ."/".$broj2."=";
+	echo $answer_djeljenje;
+}
+
+?>
